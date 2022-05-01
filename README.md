@@ -4,6 +4,8 @@
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cpp,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 
+[![Test](https://kingdox.wrapped.run/)](https://kingdox.wrapped.run/)
+
 ### Hi there 👋
 
 <!--
