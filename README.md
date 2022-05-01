@@ -4,9 +4,12 @@
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cpp,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 
-[![Test](https://kingdox.wrapped.run/)](https://kingdox.wrapped.run/)
 
 ### Hi there 👋
+
+[![Review](https://skillicons.dev/icons?i=github)](https://kingdox.wrapped.run/)
+
+
 
 <!--
 **kingdox/kingdox** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
