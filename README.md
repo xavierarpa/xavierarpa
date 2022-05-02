@@ -1,7 +1,7 @@
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cpp,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 <!--[![Review](https://skillicons.dev/icons?i=github)](https://kingdox.wrapped.run/)-->
-<meta property="og:image" content="blob:https://coverview.vercel.app/1b71484a-babb-472d-ae85-53caf1740d8d">
+
 
 
 ### Hi there 👋
