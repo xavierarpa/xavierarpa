@@ -1,5 +1,5 @@
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
-[![My Skills](https://skillicons.dev/icons?i=unity,cpp,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=unity,cs,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 <!--[![Review](https://skillicons.dev/icons?i=github)](https://kingdox.wrapped.run/)-->
 
 
