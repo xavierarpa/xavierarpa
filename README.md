@@ -1,6 +1,8 @@
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cpp,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 <!--[![Review](https://skillicons.dev/icons?i=github)](https://kingdox.wrapped.run/)-->
+<meta property="og:image" content="blob:https://coverview.vercel.app/1b71484a-babb-472d-ae85-53caf1740d8d">
+
 
 ### Hi there 👋
 <a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=v11" width="400" alt="Xavier Arpa's Dev Card"/></a>
