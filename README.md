@@ -1,15 +1,9 @@
-<a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=v11" width="400" alt="Xavier Arpa's Dev Card"/></a>
-
-
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cpp,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
-
-
-### Hi there 👋
-
 [![Review](https://skillicons.dev/icons?i=github)](https://kingdox.wrapped.run/)
 
-
+### Hi there 👋
+<a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=v11" width="400" alt="Xavier Arpa's Dev Card"/></a>
 
 <!--
 **kingdox/kingdox** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
