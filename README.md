@@ -7,7 +7,6 @@
 ### Hi there 👋
 <a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=v11" width="400" alt="Xavier Arpa's Dev Card"/></a>
 
-<a href="https://app.codesee.io/maps/public/19f4a570-d3ce-11ec-a197-cfb511b9e34f"><img src="https://app.codesee.io/maps/public/19f4a570-d3ce-11ec-a197-cfb511b9e34f" width="400" alt="Xavier Arpa's"/></a>
 
 <!--
 **kingdox/kingdox** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
