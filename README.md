@@ -6,7 +6,7 @@
 
 ### Hi there 👋
 
-[![Xavier Arpa StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=177143)](https://es.stackoverflow.com/users/177143/kingdox)
+<a href="https://stackexchange.com/users/18785899"><img src="https://stackexchange.com/users/flair/18785899.png?theme=dark" width="208" height="58" alt="perfil para Kingdox en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad" title="perfil para Kingdox en Stack Exchange, una red de sitios gratuitos de preguntas y respuestas impulsados por la comunidad"></a>
 
 
 <a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=v11" width="400" alt="Xavier Arpa's Dev Card"/></a>
