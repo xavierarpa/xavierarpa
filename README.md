@@ -1,3 +1,5 @@
+<img alt="Visitors" src="https://komarev.com/ghpvc/?username=kingdox&style=flat&labelColor=black&logo=github&label=PROFILE+VIEWS&color=29bf12"/>
+
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cs,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 <!--[![Review](https://skillicons.dev/icons?i=github)](https://kingdox.wrapped.run/)-->
