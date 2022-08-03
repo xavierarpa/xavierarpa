@@ -1,0 +1,447 @@
+public class Utils {
+
+    private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    private static SimpleDateFormat dateHourFormat = new SimpleDateFormat("yyyy/MM/dd HH");
+    private static SimpleDateFormat dateFormat2 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss:SSS");
+    private static SimpleDateFormat dateFormat3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
+    private static SimpleDateFormat dateFormat4 = new SimpleDateFormat("yyyy-MM-dd");
+
+    public static String getDate() {
+        Date date = new Date();
+        String strDate = dateFormat.format(date);
+        return strDate;
+    }
+
+    public static String getDateHour() {
+        Date date = new Date();
+        String strDate = dateHourFormat.format(date);
+        return strDate;
+    }
+
+    public static String getDate2() {
+        Date date = new Date();
+        String strDate = dateFormat2.format(date);
+        return strDate;
+    }
+
+    public static String getDate3() {
+        Date date = new Date();
+        String strDate = dateFormat3.format(date);
+        return strDate;
+    }
+
+    public static String getDate4() {
+        Date date = new Date();
+        String strDate = dateFormat4.format(date);
+        return strDate;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public static boolean isEmpty(String s){
+        return s == null || s.trim().isEmpty();
+    }
+
+    /**
+     *
+     * @param s
+     * @param defaultValue
+     * @return
+     */
+    public static String isEmpty(String s, String defaultValue) {
+        return isEmpty(s)? defaultValue: s;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public static boolean isEmpty(Map<?,?> map){
+        return map == null || map.isEmpty();
+    }
+
+    /**
+     *
+     * @param array
+     * @param defaultValue
+     * @return
+     */
+    public static boolean isEmpty(Object[] array){
+        return array == null || array.length == 0;
+    }
+
+    /**
+     *
+     * @param value
+     * @param defaultValue
+     * @return
+     */
+    public static int isEmpty(String value, int defaultValue) {
+        int result = defaultValue;
+        if (!isEmpty(value)) {
+            try {
+                result = Integer.parseInt(value);
+            } catch (Exception e) {
+                result = defaultValue;
+            }
+        }
+        return result;
+    }
+
+    /**
+     *
+     * @param value
+     * @param defaultValue
+     * @return
+     */
+    public static double isEmpty(String value, double defaultValue) {
+        double result = defaultValue;
+        if (!isEmpty(value)) {
+            try {
+                result = Double.parseDouble(value);
+            } catch (Exception e) {
+                result = defaultValue;
+            }
+        }
+        return result;
+    }
+
+    /**
+     *
+     * @param value
+     * @param defaultValue
+     * @return
+     */
+    public static float isEmpty(String value, float defaultValue) {
+        float result = defaultValue;
+        if (!isEmpty(value)) {
+            try {
+                result = Float.parseFloat(value);
+            } catch (Exception e) {
+                result = defaultValue;
+            }
+        }
+        return result;
+    }
+
+    public static String getSum(List<Map<String, String>> list) {
+        String sum = "0";
+        if (!isEmpty(list)) {
+            for (Map<String, String> map : list) {
+                sum = String.valueOf(Double.valueOf(sum) + Double.valueOf(isEmpty(map.get("NUM"), 0d)));
+            }
+        }
+        return sum;
+    }
+
+    public static String getSum(List<Map<String, String>> list, String columnName) {
+        String sum = "0";
+        if (!isEmpty(list)) {
+            for (Map<String, String> map : list) {
+                sum = String.valueOf(Double.valueOf(sum) + Double.valueOf(isEmpty(map.get(columnName), 0d)));
+            }
+        }
+        return sum;
+    }
+
+    public static Map<String, String> getMapValue(List<Map<String, String>> list, String columnName, String columnValue) {
+        Map<String, String> map = new HashMap<>();
+        if (!isEmpty(list)) {
+            for (Map<String, String> mapTable : list) {
+                if (columnValue.equals(mapTable.get(columnName))) {
+                    map = mapTable;
+                    break;
+                }
+            }
+        }
+        return map;
+    }
+
+    public static Map<String, String> getMapValue(List<Map<String, String>> list, String columnName, int columnValue) {
+        return getMapValue(list, columnName, String.valueOf(columnValue));
+    }
+
+    public static String getLondonTime() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeZone(TimeZone.getTimeZone("Europe/London"));
+        String londonTime = dateFormat3.format(calendar.getTime());
+        return londonTime;
+    }
+
+    public static String getStringValue(Map<String, Object> map, String key) {
+        String value = "";
+        if (!isEmpty(map)) {
+            if (map.containsKey(key)) {
+                if (map.get(key) != null) {
+                    value = map.get(key).toString();
+                }
+            }
+        }
+        return value;
+    }
+
+    public static int getIntValue(Map<String, Object> map, String key) {
+        int value = 0;
+        if (!isEmpty(map)) {
+            if (map.containsKey(key)) {
+                if (map.get(key) != null) {
+                    value = Integer.parseInt(map.get(key).toString());
+                }
+            }
+        }
+        return value;
+    }
+
+    public static double getDoubleValue(Map<String, Object> map, String key) {
+        double value = 0;
+        if (!isEmpty(map)) {
+            if (map.containsKey(key)) {
+                if (map.get(key) != null) {
+                    value = Double.parseDouble(map.get(key).toString());
+                }
+            }
+        }
+        return value;
+    }
+
+    public static float getFloatValue(Map<String, Object> map, String key) {
+        float value = 0;
+        if (!isEmpty(map)) {
+            if (map.containsKey(key)) {
+                if (map.get(key) != null) {
+                    value = Float.parseFloat(map.get(key).toString());
+                }
+            }
+        }
+        return value;
+    }
+
+    public static Date getDateValue(Map<String, Object> map, String key) throws Exception {
+        Date value = null;
+        if (!isEmpty(map)) {
+            if (map.containsKey(key)) {
+                if (map.get(key) != null) {
+                    value = dateFormat3.parse(map.get(key).toString());
+                }
+            }
+        }
+        return value;
+    }
+
+    public static Date getDateValue2(Map<String, Object> map, String key) throws Exception {
+        Date value = null;
+        if (!isEmpty(map)) {
+            if (map.containsKey(key)) {
+                if (map.get(key) != null) {
+                    value = dateFormat4.parse(map.get(key).toString());
+                }
+            }
+        }
+        return value;
+    }
+
+    public static Integer[] getIndexValue(String[] array, String value) {
+        Integer index[] = {-1, -1};
+        int i = 0, j = 0;
+        for (String arr : array) {
+            if (arr.equalsIgnoreCase(value)) {
+                index[0] = i;
+                index[1] = j;
+                break;
+            }
+            if (++j == array[i].length()) {
+                i++;
+                j = 0;
+            }
+        }
+        return index;
+    }
+
+    public static String[] getColumnValue(List<Map<String, String>> list, String columnName) {
+        String array[] = null;
+        if (!isEmpty(list)) {
+            array = new String[list.size()];
+            int i = 0;
+            for (Map<String, String> map : list) {
+                array[i] = isEmpty(map.get(columnName));
+                i++;
+            }
+        }
+        return array;
+    }
+
+    public static List<Map<String, String>> arrayToList(String[] array) {
+        List<Map<String, String>> list = new ArrayList<>();
+        if (!isEmpty(array)) {
+            for (String arr : array) {
+                Map<String, String> map = new HashMap<>();
+                map.put("KEY", arr);
+                map.put("VALUE", isEmpty(arr) ? "" : arr.substring(1));
+                list.add(map);
+            }
+        }
+        return list;
+    }
+
+    public static Map<String, String> arrayToMap(String[] array) {
+        Map<String, String> map = new HashMap<>();
+        if (!isEmpty(array)) {
+            for (String arr : array) {
+                map.put(arr, isEmpty(arr) ? "" : arr.substring(1));
+            }
+        }
+        return map;
+    }
+
+    public static List<Map<String, String>> arrayToList(String value, String token) {
+        List<Map<String, String>> list = new ArrayList<>();
+        if (!isEmpty(value)) {
+            String array[] = value.split(token);
+            for (String arr : array) {
+                Map<String, String> map = new HashMap<>();
+                map.put("KEY", arr);
+                map.put("VALUE", isEmpty(arr) ? "" : arr.substring(1));
+                list.add(map);
+            }
+        }
+        return list;
+    }
+
+    public static Map<String, String> arrayToMap(String value, String token) {
+        Map<String, String> map = new HashMap<>();
+        if (!isEmpty(value)) {
+            String array[] = value.split(token);
+            for (String arr : array) {
+                map.put(arr, isEmpty(arr) ? "" : arr.substring(1));
+            }
+        }
+        return map;
+    }
+
+    public static Map<String, String> fromString(String value) {
+        Map<String, String> map = new HashMap<>();
+        if (!isEmpty(value)) {
+            String array[] = value.split(",");
+            for (String arr : array) {
+                String array2[] = arr.split("=");
+                if (!isEmpty(array2[0])) {
+                    map.put(array2[0].toUpperCase(), isEmpty(array2[1]) ? "" : array2[1].substring(1));
+                }
+            }
+        }
+        return map;
+    }
+
+    public static List<Map<String, String>> fromStringToList(String value) {
+        List<Map<String, String>> list = new ArrayList<>();
+        if (!isEmpty(value)) {
+            String array[] = value.split(",");
+            for (String arr : array) {
+                String array2[] = arr.split("=");
+                if (!isEmpty(array2[0])) {
+                    Map<String, String> map = new HashMap<>();
+                    map.put("KEY", array2[0]);
+                    map.put("VALUE", isEmpty(array2[1]) ? "" : array2[1].substring(1));
+                    list.add(map);
+                }
+            }
+        }
+        return list;
+    }
+
+    public static String toString(Map<String, String> map) {
+        if (isEmpty(map)) {
+            return "";
+        }
+        String result = "";
+        StringBuilder builder = new StringBuilder(result);
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            result = "," + entry.getKey() + "=" + entry.getValue();
+            builder.append(result);
+        }
+        return result.substring(1);
+    }
+
+    public static String toString(Map<String, String> map, String token) {
+        if (isEmpty(map)) {
+            return "";
+        }
+        String result = "";
+        StringBuilder builder = new StringBuilder(result);
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            result = "," + entry.getKey() + "=" + entry.getValue();
+            builder.append(result);
+        }
+        return result.substring(1);
+    }
+
+    public static String toString(List<Map<String, String>> list, String columnName) {
+        if (isEmpty(list)) {
+            return "";
+        }
+        String result = "";
+        StringBuilder builder = new StringBuilder(result);
+        for (Map<String, String> entry : list) {
+            result = "," + entry.get(columnName);
+            builder.append(result);
+        }
+        return result.substring(1);
+    }
+
+    public static String parseXml(String xml) throws Exception {
+        String value = "";
+        if (!isEmpty(xml)) {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            InputStream is = IOUtils.toInputStream(xml, "UTF-8");
+            org.w3c.dom.Document doc = builder.parse(is);
+            org.w3c.dom.Element root = doc.getDocumentElement();
+            value = getElementValue(root);
+        }
+        return value;
+    }
+
+    public static String getElementValue(org.w3c.dom.Element e) {
+        Node child = e.getFirstChild();
+        if (child instanceof CharacterData) {
+            CharacterData cd = (CharacterData) child;
+            return cd.getData();
+        }
+        return "?";
+    }
+
+    public static Map<String, String> getParams(String xml) throws Exception {
+        Map<String, String> map = new HashMap<>();
+        if (!isEmpty(xml)) {
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            InputStream is = IOUtils.toInputStream(xml, "UTF-8");
+            org.w3c.dom.Document doc = builder.parse(is);
+            org.w3c.dom.Element root = doc.getDocumentElement();
+            if (root.getChildNodes().getLength() > 0) {
+                for (int i = 0; i < root.getChildNodes().getLength(); i++) {
+                    String nodeName = root.getChildNodes().item(i).getNodeName();
+                    String nodeValue = getElementValue(root.getChildNodes().item(i));
+                    map.put(nodeName, nodeValue);
+                }
+            }
+        }
+        return map;
+    }
+
+    public static String toXml(Map<String, String> params) {
+        StringBuffer buffer = new StringBuffer();
+        buffer.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+        buffer.append("<xml>");
+        buffer.append(toXml(params, ""));
+        buffer.append("</xml>");
+        return buffer.toString();
+    }
+
+    public static String toXml(Map<String, String> params, String prefix) {
+        StringBuffer buffer = new StringBuffer();
+        if (params != null && !params.isEmpty()) {
+            for (Map.Entry<String, String> entry : params.entrySet()) {
+                buffer.append(prefix);
