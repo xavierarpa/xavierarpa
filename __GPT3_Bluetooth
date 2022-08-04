@@ -1,0 +1,282 @@
+using UnityEngine;
+
+
+//List of Android's Bluetooth Method in Unity Engine
+// used for:
+// - Connect Devices => PairDevice()
+// - Read Device => ReadDevice()
+public static class Bluetooth {
+
+
+	// Members
+	public static bool isAndroid = false;
+
+	// Members
+	private static AndroidJavaObject androidPlugin = null;
+	private static AndroidJavaClass androidJavaClass = null;
+
+
+	// Call this function after the application starts
+	// in the Start function of any game object
+	public static void Initialize() {
+
+		// If the current platform is Android
+		// let's do the Android part of this plugin
+		if (Application.platform == RuntimePlatform.Android) {
+			// Set the isAndroid boolean to true
+			isAndroid = true;
+
+			// Let's create the Android Plug-in
+			using (androidJavaClass = new AndroidJavaClass("com.github.cachiruloapps.bluetooth.BluetoothUnity")) {
+				// We can't use the class yet
+				// We need to use the AndroidJavaObject
+				// so let's create the AndroidJavaObject
+				using (androidPlugin = androidJavaClass.CallStatic<AndroidJavaObject>("getInstance")) {
+					// Let's call the Android Plug-in's method to initialize it
+					androidPlugin.Call("initialize");
+				}
+			}
+		}
+	}
+
+
+	// Call this function before the application terminates
+	// in the Update function of any game object
+	public static void Terminate() {
+
+		// If the current platform is Android
+		// let's do the Android part of this plugin
+		if (isAndroid) {
+			// Let's call the Android Plug-in's method to terminate it
+			androidPlugin.Call("terminate");
+		}
+	}
+
+
+	// Returns true if the Bluetooth is enable
+	// else returns false
+	public static bool IsBluetoothEnabled() {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isBluetoothEnabled");
+		}
+		return false;
+	}
+
+
+	// Returns true if the Bluetooth is supported
+	// else returns false
+	public static bool IsBluetoothSupported() {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isBluetoothSupported");
+		}
+		return false;
+	}
+
+
+	// Starts the discovery of the devices
+	public static void StartDiscovery() {
+		if (isAndroid) {
+			androidPlugin.Call("startDiscovery");
+		}
+	}
+
+
+	// Cancels the discovery
+	public static void CancelDiscovery() {
+		if (isAndroid) {
+			androidPlugin.Call("cancelDiscovery");
+		}
+	}
+
+
+	// Returns true if the discovery is in progress
+	// else returns false
+	public static bool IsDiscovery() {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isDiscovery");
+		}
+		return false;
+	}
+
+
+	// Returns the list of the devices (Mac Address)
+	// detected by the discovery
+	public static string[] GetDeviceList() {
+		if (isAndroid) {
+			string[] deviceList = androidPlugin.Call<string[]>("getDeviceList");
+			if (deviceList == null) {
+				deviceList = new string[0];
+			}
+			return deviceList;
+		}
+		return new string[0];
+	}
+
+
+	// Returns the name of a device (Mac Address)
+	// detected by the discovery
+	public static string GetDeviceName(string deviceAddress) {
+		if (isAndroid) {
+			return androidPlugin.Call<string>("getDeviceName", deviceAddress);
+		}
+		return "Unknown Device";
+	}
+
+
+	// Returns the Bond State of a device (Mac Address)
+	// detected by the discovery
+	// - 10 => Bonded
+	// - 11 => Bonding
+	// - 12 => Not Bonded
+	// - 13 => N/A
+	// - 14 => Unknown
+	public static int GetDeviceBondState(string deviceAddress) {
+		if (isAndroid) {
+			return androidPlugin.Call<int>("getDeviceBondState", deviceAddress);
+		}
+		return 14;
+	}
+
+
+	// Starts the pairing of the device conected by USB
+	// Ex: BT Dongle, BT Module, BT OBD
+	// Use this method to pair the devices
+	// before using the ReadDevice() method
+	public static void PairDevice() {
+		if (isAndroid) {
+			androidPlugin.Call("pairDevice");
+		}
+	}
+
+
+	// Starts the pairing of the device
+	// with the device address passed by parameter
+	// Use this method to pair the devices
+	// before using the ReadDevice() method
+	public static void PairDevice(string deviceAddress) {
+		if (isAndroid) {
+			androidPlugin.Call("pairDevice", deviceAddress);
+		}
+	}
+
+
+	// Returns true if the device is paired
+	// else returns false
+	public static bool IsDevicePaired() {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isDevicePaired");
+		}
+		return false;
+	}
+
+
+	// Returns true if the device
+	// with the device address passed by parameter
+	// is paired else returns false
+	public static bool IsDevicePaired(string deviceAddress) {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isDevicePaired", deviceAddress);
+		}
+		return false;
+	}
+
+
+	// Connects with the device conected by USB
+	// Ex: BT Dongle, BT Module, BT OBD
+	public static void ConnectDevice() {
+		if (isAndroid) {
+			androidPlugin.Call("connectDevice");
+		}
+	}
+
+
+	// Connects with the device
+	// with the device address passed by parameter
+	public static void ConnectDevice(string deviceAddress) {
+		if (isAndroid) {
+			androidPlugin.Call("connectDevice", deviceAddress);
+		}
+	}
+
+
+	// Disconnects from the device conected by USB
+	// Ex: BT Dongle, BT Module, BT OBD
+	public static void DisconnectDevice() {
+		if (isAndroid) {
+			androidPlugin.Call("disconnectDevice");
+		}
+	}
+
+
+	// Disconnects from the device
+	// with the device address passed by parameter
+	public static void DisconnectDevice(string deviceAddress) {
+		if (isAndroid) {
+			androidPlugin.Call("disconnectDevice", deviceAddress);
+		}
+	}
+
+
+	// Returns true if the device is connected
+	// else returns false
+	public static bool IsDeviceConnected() {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isDeviceConnected");
+		}
+		return false;
+	}
+
+
+	// Returns true if the device
+	// with the device address passed by parameter
+	// is connected else returns false
+	public static bool IsDeviceConnected(string deviceAddress) {
+		if (isAndroid) {
+			return androidPlugin.Call<bool>("isDeviceConnected", deviceAddress);
+		}
+		return false;
+	}
+
+
+	// Reads the data from the device conected by USB
+	// Ex: BT Dongle, BT Module, BT OBD
+	// and returns a string with all the data
+	public static string ReadDevice() {
+		if (isAndroid) {
+			return androidPlugin.Call<string>("readDevice");
+		}
+		return "";
+	}
+
+
+	// Reads the data from the device
+	// with the device address passed by parameter
+	// and returns a string with all the data
+	public static string ReadDevice(string deviceAddress) {
+		if (isAndroid) {
+			return androidPlugin.Call<string>("readDevice", deviceAddress);
+		}
+		return "";
+	}
+
+
+	// Writes the data passed by parameter
+	// in the device conected by USB
+	// Ex: BT Dongle, BT Module, BT OBD
+	// and returns a string with all the data
+	public static void WriteDevice(string data) {
+		if (isAndroid) {
+			androidPlugin.Call("writeDevice", data);
+		}
+	}
+
+
+	// Writes the data passed by parameter
+	// in the device with the device address passed by parameter
+	// and returns a string with all the data
+	public static void WriteDevice(string deviceAddress, string data) {
+		if (isAndroid) {
+			androidPlugin.Call("writeDevice", deviceAddress, data);
+		}
+	}
+}
