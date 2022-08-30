@@ -10,6 +10,8 @@
 
 <img alt="Visitors" src="https://komarev.com/ghpvc/?username=kingdox&style=flat&labelColor=black&logo=github&label=PROFILE+VIEWS&color=29bf12"/>
 
+[![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode,unity,cs,discord,firebase,gcp,github,gitlab,visualstudio,bash,blender,dotnet,git,githubactions,md,reactivex,redux,regex)](https://skillicons.dev)
+____
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=unity,cs,discord,firebase,gcp,github,gitlab,visualstudio)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=bash,blender,dotnet,git,githubactions,md,reactivex,redux,regex)](https://skillicons.dev)
