@@ -4,9 +4,7 @@
 > Game Designer & Developer & Entrepreneur
 
 > **Warning**
-> This is a warning !
-
-[MMA Page](https://github.com/stars/kingdox/lists/mma-middleware-module-app)
+> See [MMA Architecture](https://github.com/stars/kingdox/lists/mma-middleware-module-app)
 
 <img alt="Visitors" src="https://komarev.com/ghpvc/?username=kingdox&style=flat&labelColor=black&logo=github&label=PROFILE+VIEWS&color=29bf12"/>
 
