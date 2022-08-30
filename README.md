@@ -10,11 +10,13 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode,unity,cs,discord,firebase,gcp,github,gitlab,visualstudio,bash,blender,dotnet,git,githubactions,md,reactivex,redux,regex)](https://skillicons.dev)
 ____
+  <summary>Github Stats ⚡</summary>
+  <a href="#">![Github stats](https://github-readme-stats.vercel.app/api?username=kingdox&theme=blueberry&count_private=true&hide_border=true&line_height=20)</a>
+  <a href="#">![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kingdox&layout=compact&theme=blueberry&count_private=true&hide_border=true)</a>
 
-
-
-<a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=us0" width="400" alt="Xavier Arpa's Dev Card"/></a>
-
+<details>
+  <a href="https://app.daily.dev/Kingdox"><img src="https://api.daily.dev/devcards/a18a4d732c2740c3b3043824189b5ad0.png?r=us0" width="400" alt="Xavier Arpa's Dev Card"/></a>
+</details>
 
 <!--
 ![status](https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/status/532766799490580481?simple=true)
@@ -26,9 +28,4 @@ ____
 [![spotify](https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/spotify/276544649148235776)](https://dev.discordprofiles.me/openspotify/276544649148235776)
 -->
 
-<details>
-  <summary>Github Stats ⚡</summary>
-  
-  <a href="#">![Github stats](https://github-readme-stats.vercel.app/api?username=kingdox&theme=blueberry&count_private=true&hide_border=true&line_height=20)</a>
-  <a href="#">![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kingdox&layout=compact&theme=blueberry&count_private=true&hide_border=true)</a>
-</details>
+
