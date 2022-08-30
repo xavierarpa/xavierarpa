@@ -1,7 +1,7 @@
 # Hey, I'm Xavier <img style="width: 38px" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif">
 
 > **Note**
-> Game Designer & Developer
+> Game Designer & Developer & Entrepreneur
 
 > **Warning**
 > This is a warning !
