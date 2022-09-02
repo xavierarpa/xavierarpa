@@ -4,7 +4,7 @@
 > Game Designer & Developer & Entrepreneur
 
 > **Warning**
-> See [MMA Architecture](https://github.com/stars/kingdox/lists/mma-middleware-module-app)
+> See [MMA Architecture](https://github.com/MMA-Architecture)
 
 <img alt="Visitors" src="https://komarev.com/ghpvc/?username=kingdox&style=flat&labelColor=black&logo=github&label=PROFILE+VIEWS&color=29bf12"/>
 
