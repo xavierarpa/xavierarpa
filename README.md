@@ -10,7 +10,7 @@
 
 ![status](https://nocache.advaith.workers.dev?url=https://img.shields.io/endpoint?url=https://dev.discordprofiles.me/api/badge/status/263804251971649536?simple=true)
 
-[![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode,unity,cs,discord,firebase,gcp,github,gitlab,visualstudio,bash,dotnet,git,githubactions,md,reactivex,redux,regex)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,ts,angular,androidstudio,html,css,sass,vscode,unity,cs,discord,firebase,gcp,github,gitlab,visualstudio,bash,dotnet,git,githubactions,md,reactivex,redux,regex, ionic)](https://skillicons.dev)
 ____
 
 <details>
