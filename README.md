@@ -3,7 +3,7 @@
 > **Note**
 > Game Designer
 
-> **Error**
+> **Note**
 > See [MMA Architecture](https://github.com/MMA-Architecture)
 
 > **Warning**
