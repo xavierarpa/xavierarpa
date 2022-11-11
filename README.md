@@ -1,9 +1,6 @@
 # Hey, I'm Xavier <img style="width: 38px" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif">
 
 > **Note**
-> Game Designer
-
-> **Note**
 > See [MMA Architecture](https://github.com/MMA-Architecture)
 
 > **Note**
