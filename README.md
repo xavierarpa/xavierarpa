@@ -6,14 +6,14 @@
 > **Note**
 > See [MMA Architecture](https://github.com/MMA-Architecture)
 
-> **Warning**
+> **Note**
 > See [My Gist](https://gist.github.com/kingdox)
 
 
-> **Warning**
+> **Note**
 > See [My Tools](https://github.com/KingdoxTools)
 
-> **Warning**
+> **Note**
 > See [My Games](https://github.com/KingdoxGames)
 
 
