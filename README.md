@@ -3,9 +3,8 @@
 > **Note**
 > Game Designer
 
-> **Warning**
+> **Error**
 > See [MMA Architecture](https://github.com/MMA-Architecture)
-> Ha
 
 > **Warning**
 > See [My Gist](https://gist.github.com/kingdox)
