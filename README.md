@@ -1,18 +1,7 @@
 # Hey, I'm Xavier <img style="width: 38px" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif">
 
 > **Note**
-> See [MMA Architecture](https://github.com/MMA-Architecture)
-
-> **Note**
 > See [My Gist](https://gist.github.com/kingdox)
-
-
-> **Note**
-> See [My Tools](https://github.com/KingdoxTools)
-
-> **Note**
-> See [My Games](https://github.com/KingdoxGames)
-
 
 <img alt="Visitors" src="https://komarev.com/ghpvc/?username=kingdox&style=flat&labelColor=black&logo=github&label=PROFILE+VIEWS&color=29bf12"/>
 
