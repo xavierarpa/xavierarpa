@@ -6,4 +6,4 @@
 ____
 ![](https://hit.yhype.me/github/profile?user_id=44328679)
 
-[![Logo](https://kingdox.github.io/assets/img/uniflux.png)](https://github.com/kingdox/UniFlux)
+[![Logo](https://repository-images.githubusercontent.com/616052596/1a10ad21-e1ef-4a8f-a05a-64df9b02411f)](https://github.com/kingdox/UniFlux)
