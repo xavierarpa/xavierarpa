@@ -1,4 +1,4 @@
-# Hey, I'm Xavier <img style="width: 38px" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif">
+# Hey, I'm Xavier
 
 [![My Skills](https://skillicons.dev/icons?i=unity,cs,dotnet,firebase,githubactions,vscode,js,ts,angular,androidstudio,html,css,sass,discord,gcp,github,gitlab,visualstudio,bash,git,md,reactivex,redux,regex)](https://skillicons.dev)
 ____
