@@ -1,4 +1,4 @@
-# Hey, I'm Xavier
+# Hey, I'm Xavier 😎👍🔥
 
 [![My Skills](https://skillicons.dev/icons?i=unity,cs,dotnet,firebase,githubactions,vscode,js,ts,angular,androidstudio,html,css,sass,discord,gcp,github,gitlab,visualstudio,bash,git,md,reactivex,redux,regex)](https://skillicons.dev)
 ____
