@@ -12,7 +12,7 @@ Code to See:
 
 [Make a C# BehaviorSubject](https://gist.github.com/xavierarpa/9a98dcaf028905ae7ddd9ddc405dfdd8)
 
-[Implement developer messages in the Unity Inspector](https://github.com/xavierarpa/Tool.DeveloperAttribute)
+[Convert JSON to JSONScriptableObject](https://github.com/xavierarpa/JSONSO?tab=readme-ov-file)
 
 [Game: Puzzle](https://github.com/xavierarpa/Game.BePuzzled/tree/main)
 
