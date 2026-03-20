@@ -12,7 +12,27 @@ Code to See:
 
 [Make a C# BehaviorSubject](https://gist.github.com/xavierarpa/9a98dcaf028905ae7ddd9ddc405dfdd8)
 
+[Await integers as delay in C#](https://gist.github.com/xavierarpa/fd269f28eaacc3771d0c94b0c5d516d0)
+
 [Convert JSON to JSONScriptableObject](https://github.com/xavierarpa/JSONSO?tab=readme-ov-file)
+
+[InScript: Lightweight scripting system for Unity](https://github.com/xavierarpa/InScript)
+
+[PurrFlux: Networked event system built on PurrNet and UniFlux](https://github.com/xavierarpa/PurrFlux)
+
+[NamespacePath: Manage and refactor C# namespaces based on folder structure](https://github.com/xavierarpa/NamespacePath)
+
+[PrefabMenuInator: Generate MenuItem scripts from prefab folders](https://github.com/xavierarpa/PrefabMenuInator)
+
+[MarkDownViewer: Browse and visualize Markdown files inside Unity Editor](https://github.com/xavierarpa/MarkDownViewer)
+
+[RegionsAssignation: Organize C# class members into #region blocks](https://github.com/xavierarpa/RegionsAssignation)
+
+[UsingSort: Order and apply consistent C# using directives](https://github.com/xavierarpa/UsingSort)
+
+[LicenseHeaderTool: Manage license headers in C# scripts](https://github.com/xavierarpa/LicenseHeaderTool)
+
+[UniFlux.Toolkit: UniFlux Tools for Unity](https://github.com/xavierarpa/UniFlux.Toolkit)
 
 [Game: Puzzle](https://github.com/xavierarpa/Game.BePuzzled/tree/main)
 
