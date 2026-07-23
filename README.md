@@ -1,5 +1,10 @@
 # Hey, I'm Xavier 😎👍🔥
 
+<a href="https://www.credly.com/badges/96ace115-d258-4f27-b580-f55a8336ae6d/public_url" target="_blank">
+  <img src="https://images.credly.com/size/680x680/images/05915903-c7fd-4256-8754-9ff9e9e6465e/image.png" alt="Unity Certified Professional: Programmer" width="150">
+</a>
+
+____
 [![My Skills](https://skillicons.dev/icons?i=unity,cs,dotnet,firebase,githubactions,vscode,js,ts,angular,androidstudio,html,css,sass,discord,gcp,github,gitlab,visualstudio,bash,git,md,reactivex,redux,regex)](https://skillicons.dev)
 ____
 Code to See:
